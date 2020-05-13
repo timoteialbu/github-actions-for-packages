@@ -1,5 +1,5 @@
 {
-  "name": "actions-template",
+  "name": "@timoteialbu/actions-template",
   "version": "1.0.0",
   "description": "Learn how to use GitHub Actions!",
   "main": "index.js",
@@ -33,5 +33,12 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
-  "dependencies": {}
+  "dependencies": {},
+    "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaabca/blue-node-utils.git"
+  }
 }
