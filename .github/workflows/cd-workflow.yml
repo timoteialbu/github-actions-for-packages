@@ -13,7 +13,7 @@ jobs:
         strategy:
             matrix:
                 os: [windows-latest, macos-latest, ubuntu-lastest]
-                node-version: [12]
+                node-version: ['12']
         steps:
             - uses: actions/checkout@v1
             - name: npm install and build
