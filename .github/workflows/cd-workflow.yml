@@ -9,11 +9,7 @@ on:
 
 jobs:
     build:
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                os: [windows-latest, macos-latest]
-                node-version: ['12']
+        runs-on: macos-latest
         steps:
             - uses: actions/checkout@v1
             - name: npm install and build
