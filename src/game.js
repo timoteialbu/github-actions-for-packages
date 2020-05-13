@@ -1,5 +1,6 @@
 export default class Game {
   constructor (p1, p2) {
+    console.log('test');
     this.p1 = p1
     this.p2 = p2
     this.board = [[null, null, null], [null, null, null], [null, null, null]]
