@@ -1,5 +1,3 @@
-# This file wont do us much good in this location, make sure you change the path as directed to continue!
-
 name: Deploy to Github Packages
 
 on:
@@ -9,7 +7,11 @@ on:
 
 jobs:
     build:
-        runs-on: macos-latest
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [windows-latest, macos-latest]
+                node-version: ["12"]
         steps:
             - uses: actions/checkout@v1
             - name: npm install and build
